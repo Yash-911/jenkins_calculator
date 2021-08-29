@@ -13,6 +13,7 @@ pipeline {
 
         stage('Initialize') {
             steps {
+	    	git 'https://github.com/Yash-911/calculator.git'
                 sh '''
                     npm install
                 '''
